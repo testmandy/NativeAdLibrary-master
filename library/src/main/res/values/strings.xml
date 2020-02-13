@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">Library</string>
+
+  <string name="credits">credits</string>
+  <string name="click_ad_title">Click AD wait for 3 seconds</string>
+  <string name="bonus_m">+%1$sM</string>
+  <string name="recommend_offer_dialog_title_btn">Install for %1$s credits</string>
+</resources>

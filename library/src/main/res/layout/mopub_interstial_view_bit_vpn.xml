@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#F9F9F9"
+    android:orientation="vertical"
+    android:paddingBottom="16dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/logo"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/logo"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="1231231231333333333333331237317485433333"
+        android:textColor="#333"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/logo"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="sdasdasdasdas"
+        android:textColor="#666"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/native_main_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/call_to_action"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/native_main_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ad_action_bg"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="123332"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/native_privacy_information_icon_image"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="native_privacy_information_icon_image"
+        tools:background="#ff0000" />
+
+    <jp.shts.android.library.TriangleLabelView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        app:backgroundColor="#C7C7C7"
+        app:corner="rightTop"
+        app:labelBottomPadding="5dp"
+        app:labelCenterPadding="0dp"
+        app:labelTopPadding="5dp"
+        app:primaryText="AD"
+        app:primaryTextColor="@color/white"
+        app:primaryTextSize="9sp"
+        app:secondaryTextSize="9sp" />
+
+</RelativeLayout>

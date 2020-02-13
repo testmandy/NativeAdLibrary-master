@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_transparent_70">
+
+
+    <EditText
+        android:id="@+id/edit_ad_list"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="添加测试广告链"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="保存"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_banner"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="banner"/>
+
+        <Button
+            android:id="@+id/btn_longing"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="loading"/>
+
+        <Button
+            android:id="@+id/btn_end"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="end"/>
+
+        <Button
+            android:id="@+id/btn_special"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="special"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_lucky_box"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="luckybox"/>
+
+        <Button
+            android:id="@+id/btn_ins"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="ins"/>
+
+        <Button
+            android:id="@+id/btn_video_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="video offer"/>
+        <Button
+            android:id="@+id/btn_splash"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="splash"/>
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/ad_container"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <me.dt.nativeadlibary.view.NativeAdBannerView
+        android:id="@+id/banner_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

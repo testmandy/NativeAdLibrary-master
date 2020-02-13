@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nativeRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#ffffff"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp">
+
+    <Button
+        android:id="@+id/call_to_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ad_action_bg"
+        android:gravity="center"
+        android:minHeight="0dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="booknew"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="12dp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_mainImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/mainImage"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/adRating"
+        style="@style/foodRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="11dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/ll_mainImage"
+        android:numStars="5" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adRating"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/call_to_action"
+        android:layout_toRightOf="@id/ll_mainImage"
+        android:ellipsize="end"
+        android:maxEms="12"
+        android:maxLines="1"
+        android:text="3333333"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_alignLeft="@id/title"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/call_to_action"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="sdasdasdasdasdasd"
+        android:textColor="@color/hint_text_color"
+        android:textSize="15dp" />
+
+</RelativeLayout>

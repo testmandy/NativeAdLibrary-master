@@ -1,0 +1,16 @@
+def uti = 'http://10.88.0.34:8081/repository/maven-releases/'
+def userName = 'seal'
+def pwd = 'dingtone123'
+group = 'me.dt.native.ad.library'
+version = "1.0.0"
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri(uti)) {
+                authentication(userName: userName, password: pwd)
+            }
+
+        }
+    }
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_tracking_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="TEST AD"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="TEST AD hsafg ajfbajfbjakjfkjsdbfkjakjnflkjanfk"
+        android:textColor="#464646"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/ll_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/content"
+
+        >
+
+        <ImageView
+            android:id="@+id/native_main_image"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@+id/call_to_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/native_main_image"
+            android:layout_alignRight="@id/native_main_image"
+            android:background="@drawable/ad_action_bg"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:minWidth="90dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:text="123332"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ad_starburst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Ad"
+            android:textColor="#008ef0"
+            android:textSize="10dip" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:src="@drawable/icon_ad" />
+    </LinearLayout>
+</RelativeLayout>

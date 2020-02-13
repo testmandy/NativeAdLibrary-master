@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text=""
+        />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:textColor="#464646"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/content">
+
+        <ImageView
+            android:id="@+id/native_main_image"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/call_to_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignRight="@+id/native_main_image"
+            android:layout_below="@+id/native_main_image"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/ad_action_bg"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            />
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/native_privacy_information_icon_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="native_privacy_information_icon_image" />
+
+</RelativeLayout>

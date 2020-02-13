@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#666"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/banner"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:onClick="onClickBanner"
+        android:text="Banner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/loading"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:onClick="onClickLoading"
+        android:text="Loading"
+        app:layout_constraintLeft_toRightOf="@id/banner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/interstial"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:onClick="onClickInterstial"
+        android:text="Interstial"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/banner"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/ins"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:onClick="onClickIns"
+        android:text="Ins"
+        app:layout_constraintLeft_toRightOf="@id/interstial"
+        app:layout_constraintTop_toBottomOf="@id/loading"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/lucky_box"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:onClick="onClickLuckyBox"
+        android:text="LuckyBox"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/interstial"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/splash"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:onClick="onClickSplash"
+        android:text="Splash"
+        app:layout_constraintLeft_toRightOf="@id/lucky_box"
+        app:layout_constraintTop_toBottomOf="@id/ins"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/video_offer"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:onClick="onClickVideoOffer"
+        android:text="VideoOffer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lucky_box"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/special_offer"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:onClick="onClickSpecialOffer"
+        android:text="SpecialOffer"
+        app:layout_constraintLeft_toRightOf="@id/video_offer"
+        app:layout_constraintTop_toBottomOf="@id/splash"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <FrameLayout
+        android:id="@+id/ad_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!--<me.dt.nativeadlibary.view.NativeAdBannerView-->
+        <!--android:id="@+id/ad_banner_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintLeft_toRightOf="parent"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+</android.support.constraint.ConstraintLayout>
